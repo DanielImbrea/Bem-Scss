@@ -1,0 +1,73 @@
+.mic {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 1200px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+
+    .mic__left {
+      position: relative;
+      width: 100%;
+      padding-right: 5%;
+
+      img {
+        width: 260px;
+        height: 300px;
+        object-fit: cover;
+
+        &:nth-child(2) {
+          position: absolute;
+          top: 50%;
+          left: 30%;
+          border: 10px solid white;
+
+        }
+      }
+    }
+
+    .mic__right {
+
+      width: 100%;
+      margin-top: 100px;
+
+      .about {
+        background: rgb(36, 193, 36);
+        display: inline-block;
+        width: 100px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          color: white;
+          font-weight: bold;
+        }
+      }
+
+      h2 {}
+
+      p:nth-child(3) {
+        color: grayscale($color: #7d7a7a);
+      }
+
+      .signature {
+        img {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+
+      .description p {
+        margin-top: 30px;
+
+      }
+    }
+  }
+}
